@@ -118,15 +118,14 @@
      <div class="row"> <br><br><br></div>
      <nav class="navbar navbar-inverse navbar-fixed-bottom">
         <div class="container-fluid">
-              <div class="col-md-4"></div>
-              <div class="collapse navbar-collapse col-md-4" id="bs-example-navbar-collapse-2">
-                    <ul class="nav navbar-nav" >
-                          <li><a href="#"> Feisbuk <span class="sr-only">(current)</span></a></li>
-                          <li><a href="#"> tuiterr </a></li>
-                          <li><a href="#">intercagram</a></li>
-                    </ul>
-              </div>
-              <div class="col-md-4"></div> 
+              
+                    <div class="caja-redes">
+                       <a href="https://www.linkedin.com" class="icon-button linkedin"><i class="icon-linkedin"></i><span></span></a>
+                       <a href="https://www.pinterest.com" class="icon-button pinterest"><i class="icon-pinterest"></i><span></span></a>
+                       <a href="https://www.twitter.com" class="icon-button twitter"><i class="icon-twitter"></i><span></span></a>
+                       <a href="https://www.facebook.com" class="icon-button facebook"><i class="icon-facebook"></i><span></span></a>
+                    </div>
+             
         </div>
      </nav>
 @endsection
