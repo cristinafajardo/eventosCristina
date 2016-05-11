@@ -120,10 +120,10 @@
         <div class="container-fluid">
               
                     <div class="caja-redes">
-                       <a href="https://www.linkedin.com" class="icon-button linkedin"><i class="icon-linkedin"></i><span></span></a>
-                       <a href="https://www.pinterest.com" class="icon-button pinterest"><i class="icon-pinterest"></i><span></span></a>
-                       <a href="https://www.twitter.com" class="icon-button twitter"><i class="icon-twitter"></i><span></span></a>
-                       <a href="https://www.facebook.com" class="icon-button facebook"><i class="icon-facebook"></i><span></span></a>
+                       <a href="https://www.linkedin.com" class="icon-button linkedin" target="_blank"><i class="icon-linkedin"></i><span></span></a>
+                       <a href="https://www.pinterest.com" class="icon-button pinterest" target="_blank"><i class="icon-pinterest"></i><span></span></a>
+                       <a href="https://www.twitter.com" class="icon-button twitter" target="_blank"><i class="icon-twitter"></i><span></span></a>
+                       <a href="https://www.facebook.com" class="icon-button facebook" target="_blank"><i class="icon-facebook"></i><span></span></a>
                     </div>
              
         </div>
