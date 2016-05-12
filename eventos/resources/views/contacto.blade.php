@@ -1,6 +1,8 @@
-@extends('admin.template.main')
-
-<h1>ESTO ES "CONTACTO"</h1>
+@extends('admin.template.layout')
+@section('title')
+    Contacto
+@endsection
+@section('content')
 <form class="form-horizontal">
 	  <fieldset>
 		    <legend>Contact Us</legend>
@@ -31,8 +33,7 @@
 		    </div>
 	  </fieldset>
 </form>
-
-
+@endsection
 
 
 

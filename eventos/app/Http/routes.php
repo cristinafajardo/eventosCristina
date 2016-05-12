@@ -15,9 +15,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
- Route::get('template', function () {
+/*Route::get('template', function () {
     return View::make('template'); 
- });
+ });*/
 
 Route::get('que', function () {
     return view('que');
