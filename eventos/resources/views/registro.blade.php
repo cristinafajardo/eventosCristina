@@ -6,7 +6,7 @@
 <div class="container">
 	<form class="form-horizontal">
 	  <fieldset>
-	    <legend>Registro</legend>
+	    <legend>Registrarme</legend>
 	    <div class="form-group">
 		  <label for="usr" class="col-lg-2 control-label">Nombre</label>
 		  <div class="col-md-10">

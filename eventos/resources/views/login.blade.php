@@ -6,7 +6,7 @@
 <div class="container">
 	<form class="form-horizontal">
 		  <fieldset>
-			    <legend>Login</legend>
+			    <legend>Iniciar sesión</legend>
 			    <div class="form-group">
 			      <label for="inputEmail" class="col-lg-2 control-label">Email</label>
 			      <div class="col-md-10">

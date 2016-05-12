@@ -46,7 +46,7 @@
                       <img src="{{ asset('img/cafe.jpg') }}" alt="...">
                       <div class="caption" align="center">
                         <h3>ORGANIZÁ RAPIDO Y FACIL!</h3>
-                        <p>Ahorrá tiempo! Porque con Meating calculamos todo y lo haces en un touch!</p>
+                        <p>sólo con un par de clicks</p>
                         <p><a href="#" class="btn btn-primary" role="button">Registrate Ahora!</a> </p>
                       </div>
                   </div>
@@ -56,7 +56,7 @@
                         <img src="{{ asset('img/te.jpg') }}" alt="...">
                         <div class="caption" align="center">
                           <h3>INVITA</h3>
-                          <p>Invita a todas las personas que quieras porque tenemos el corazon gigante!!</p>
+                          <p>Invita a todos tus amigos</p>
                           <p><a href="#" class="btn btn-primary" role="button">Invita amig@s!</a> </p>
                         </div>
                     </div>
@@ -66,7 +66,7 @@
                         <img src="{{ asset('img/torta.jpg') }}"alt="...">
                         <div class="caption" align="center">
                           <h3>DISFRUTA</h3>
-                          <p>El ultimo paso y el mejor! Que estas esperando?? Regístrate y SALUD!</p>
+                          <p>El ultimo paso y buen provecho!</p>
                           <p><a href="#" class="btn btn-primary" role="button">Comenzá a disfrutar!</a> </p>
                         </div>
                     </div>
