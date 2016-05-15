@@ -6,10 +6,9 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-class queController extends Controller
+class UsuariosController extends Controller
 {
-    public function view()
-    {
-        return view('que');
-    }
+        public function login(){
+        return view('login');
+   }
 }

@@ -22,7 +22,6 @@
 		      <label for="textArea" class="col-lg-2 control-label">Consulta</label>
 		      <div class="col-md-10">
 		        <textarea class="form-control" rows="3" id="textArea"></textarea>
-		        <span class="help-block">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
 		      </div>
 		    </div>
 		    <div class="form-group">

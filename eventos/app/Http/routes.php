@@ -11,30 +11,41 @@
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
 });
 
-/*Route::get('template', function () {
+Route::get('template', function () {
     return View::make('template'); 
- });*/
+ });
 
 Route::get('que', function () {
     return view('que');
 });
-
 Route::get('quienes', function () {
     return view('quienes');
-});
 
-Route::get('contacto', function () {
-    return view('contacto');
+Route::get('registro', function () {
+    return view('registro');
 });
 
 Route::get('login', function () {
     return view('login');
 });
 
-Route::get('registro', function () {
-    return view('registro');
+Route::get('contacto', function () {
+    return view('contacto');
 });
+});*/
+Route::get('index', 'DescripcionesController@index');
+Route::get('que', 'DescripcionesController@que');
+Route::get('quienes', 'DescripcionesController@quienes');
+Route::get('contacto', 'DescripcionesController@contacto');
+Route::get('registro', 'RegistroController@registro');
+Route::get('login', 'UsuariosController@login');
+
+
+
+
+
+

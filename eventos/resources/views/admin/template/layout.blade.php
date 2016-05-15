@@ -21,14 +21,14 @@
                     </div>
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
                           <ul class="nav navbar-nav">
-                                <li class="active"><a href="#">Inicio <span class="sr-only">(current)</span></a></li>
-                                <li><a href="#">Que es Eventos de Cris</a></li>
-                                <li><a href="#">Quienes Somos</a></li>
-                                <li><a href="#">Contacto</a></li>
+                                <li class="active"><a href={{ url('index') }}>Inicio <span class="sr-only">(current)</span></a></li>
+                                <li><a href={{ url('que') }}>Que es Eventos de Cris</a></li>
+                                <li><a href={{ url('quienes') }}>Quienes Somos</a></li>
+                                <li><a href={{ url('contacto') }}>Contacto</a></li>
                           </ul>
                           <ul class="nav navbar-nav navbar-right">
-                                <li><a href="#">Inicio de sesion</a></li>
-                                <li><a href="#">Registrarse</a></li>
+                                <li><a href={{ url('login') }}>Inicio de sesion</a></li>
+                                <li><a href={{ url('registro') }}>Registrarse</a></li>
                           </ul>
                     </div>
               </div>
