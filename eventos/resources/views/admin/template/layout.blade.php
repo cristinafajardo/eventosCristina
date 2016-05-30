@@ -6,6 +6,10 @@
         <link rel="stylesheet" href="{{ asset('plugins/bootstrap/css/bootstrap.css') }}">
         <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css">
         <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css">
+
+        <!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css"> -->
+        <link rel="stylesheet" href="{{ asset('css/bootstrap-image-gallery.min.css') }}">
     </head>
     <body>
         <nav class="navbar navbar-inverse">
@@ -34,7 +38,7 @@
               </div>
         </nav>
         <div class="container">
-            @yield('content');
+            @yield('content')
         </div>
         <div class="row"> <br><br><br></div>
               <nav class="navbar navbar-inverse navbar-fixed-bottom">
@@ -48,7 +52,12 @@
                   </div>
               </nav>
         </div>
-    	 <script src="{{ asset('plugins/jquery/js/jquery-2.1.4.js') }}"> </script>
+    	<!-- <script src="{{ asset('plugins/jquery/js/jquery-2.1.4.js') }}"> </script> -->
     	 <script src="{{ asset('plugins/bootstrap/js/bootstrap.js') }}"> </script>
+
+       <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+       <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+       <script src="{{ asset('js/bootstrap-image-gallery.min.js') }}"></script>
+      <!-- <script src="{{ asset('js/demo.js') }}"></script> -->
     </body>
 </html>

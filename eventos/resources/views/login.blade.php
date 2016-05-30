@@ -4,7 +4,7 @@
 @endsection
 @section('content')
 <div class="container">
-	<form class="form-horizontal">
+	<form class="form-horizontal" method='post' action='/login' >
 		  <fieldset>
 			    <legend>Iniciar sesión</legend>
 			    <div class="form-group">
@@ -14,16 +14,21 @@
 			      </div>
 			    </div>
 			    <div class="form-group">
-			      <label for="inputPassword" class="col-lg-2 control-label">Password</label>
+			      <label for="inputPassword" class="col-lg-2 control-label">Contraseña</label>
 			      <div class="col-lg-10">
-			        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+			        <input type="password" class="form-control" id="inputPassword" placeholder="Contraseña">
 			      </div>
 			    </div>
 			    <div class="form-group">
 			      <div class="col-lg-10 col-lg-offset-2">
-			        <button type="reset" class="btn btn-default">Cancelar</button>
-			        <button type="submit" class="btn btn-primary">Enviar</button>
+			        <button type="submit" class="btn btn-primary">Entrar</button>
 			      </div>
+			    </div>
+			    <div class="form-group">
+			    	<div class="pull-right">
+						<a href="#" class="btn btn-default">Olvide la contraseña</a>
+	                    <a href="#" class="btn btn-primary">Registrarme</a>
+                    </div>
 			    </div>
 		  </fieldset>
 	</form>

@@ -37,14 +37,32 @@ Route::get('contacto', function () {
     return view('contacto');
 });
 });*/
+/*INDEX */
 Route::get('index', 'DescripcionesController@index');
+/*QUE ES */
 Route::get('que', 'DescripcionesController@que');
+/*QUIENES SOMOS */
 Route::get('quienes', 'DescripcionesController@quienes');
+/*CONTACTO */
 Route::get('contacto', 'DescripcionesController@contacto');
+
+/*REGISTRO */
 Route::get('registro', 'RegistroController@registro');
+/*LOGIN */
 Route::get('login', 'UsuariosController@login');
+Route::post('login', 'UsuariosController@login');
 
 
+
+
+/*ORGANIZA EVENTO */
+Route::get('organizaEvento', function () {
+    return view('organizaEvento');
+});
+/*MIS EVENTOS */
+Route::get('misEventos', function () {
+    return view('misEventos');
+});
 
 
 

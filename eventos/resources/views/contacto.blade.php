@@ -21,7 +21,7 @@
 		    <div class="form-group">
 		      <label for="textArea" class="col-lg-2 control-label">Consulta</label>
 		      <div class="col-md-10">
-		        <textarea class="form-control" rows="3" id="textArea"></textarea>
+		        <textarea class="form-control" rows="3" id="textArea" placeholder="Escriba aquí su consulta"></textarea>
 		      </div>
 		    </div>
 		    <div class="form-group">
