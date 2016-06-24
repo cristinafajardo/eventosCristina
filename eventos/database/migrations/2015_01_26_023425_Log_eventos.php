@@ -15,16 +15,13 @@ class LogEventos extends Migration {
 		Schema::table('log_eventos',function($table)
 			{
 				$table->create();
-
 				$table->increments('id');
-
 				$table->integer('evento_l')->unsigned();
 				$table->foreign('evento_l')->references('id')->on('eventos')->onDelete('cascade');
 				$table->date('fecha_l'); 
 				$table->time('hora_l');
 				$table->string('username_l',30);
 				$table->string('mensaje');
-
 				$table->timestamps();
 			});
 	}

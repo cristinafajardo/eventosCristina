@@ -11,32 +11,6 @@
 |
 */
 
-/*Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('template', function () {
-    return View::make('template'); 
- });
-
-Route::get('que', function () {
-    return view('que');
-});
-Route::get('quienes', function () {
-    return view('quienes');
-
-Route::get('registro', function () {
-    return view('registro');
-});
-
-Route::get('login', function () {
-    return view('login');
-});
-
-Route::get('contacto', function () {
-    return view('contacto');
-});
-});*/
 /*INDEX */
 Route::get('index', 'DescripcionesController@index');
 /*QUE ES */
@@ -47,10 +21,18 @@ Route::get('quienes', 'DescripcionesController@quienes');
 Route::get('contacto', 'DescripcionesController@contacto');
 
 /*REGISTRO */
-Route::get('registro', 'RegistroController@registro');
+Route::resource('usuarios', 'UsuariosController');
+Route::get('registro', 'UsuariosController@create');
+//Route::post('registro', 'UsuariosController@login');
+/*Route::group(['prefix'=> 'admin'], function() {
+    //
+    
+});*/
+
 /*LOGIN */
 Route::get('login', 'UsuariosController@login');
-Route::post('login', 'UsuariosController@login');
+Route::post('login','UsuariosController@post_login');
+
 
 
 

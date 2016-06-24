@@ -3,25 +3,31 @@
     Contacto
 @endsection
 @section('content')
-<form class="form-horizontal">
+{!!Form::open(['method' => 'POST', 'url' => 'login', 'role' => 'form'])!!}
 	  <fieldset>
 		    <legend>Contact Us</legend>
+		    @if($errors->any())
+                Datos incorrectos
+                @endif
 		    <div class="form-group">
 				  <label for="usr" class="col-lg-2 control-label">Nombre</label>
 				  <div class="col-md-10">
-				  	<input type="text" class="form-control" id="usr" placeholder="Nombre">
+				  	 {!!Form::text('nombre', '', array('class' => 'form-control'))!!}
+			         <span class="help-block">{{ $errors->first('nombre') }}</span>
 				  </div>
 			</div>
 			<div class="form-group">
-		      <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+		      <label for="Email" class="col-lg-2 control-label">Email</label>
 		      <div class="col-md-10">
-		        <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+		         {!!Form::text('Email', '', array('class' => 'form-control'))!!}
+			     <span class="help-block">{{ $errors->first('Email') }}</span>
 		      </div>
 		    </div>
 		    <div class="form-group">
 		      <label for="textArea" class="col-lg-2 control-label">Consulta</label>
 		      <div class="col-md-10">
-		        <textarea class="form-control" rows="3" id="textArea" placeholder="Escriba aquí su consulta"></textarea>
+		       {!!Form::textarea('consulta', '', array('class' => 'form-control'))!!}
+			     <span class="help-block">{{ $errors->first('consulta') }}</span>
 		      </div>
 		    </div>
 		    <div class="form-group">
@@ -31,7 +37,7 @@
 		      </div>
 		    </div>
 	  </fieldset>
-</form>
+ {!!Form::close()!!}
 @endsection
 
 

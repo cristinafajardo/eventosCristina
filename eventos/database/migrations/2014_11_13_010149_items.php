@@ -12,18 +12,14 @@ class Items extends Migration {
 	 */
 	public function up()
 	{
-		Schema::table('items',function($table) // creo los campos de la tabla items
+		Schema::table('items',function($table) 
 		{
 			$table->create();
-			
 			$table->increments('id');
-			
 			$table->integer('idevento')->unsigned(); 
 			$table->foreign('idevento')->references('id')->on('eventos')->onDelete('cascade');
 			$table->string('nombre');
 			$table->integer('cantidad'); 
-			
-			
 			$table->timestamps();
 		});
 	}

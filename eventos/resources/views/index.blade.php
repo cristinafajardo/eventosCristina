@@ -47,7 +47,7 @@
                       <div class="caption" align="center">
                         <h3>ORGANIZÁ RAPIDO Y FACIL!</h3>
                         <p>sólo con un par de clicks</p>
-                        <p><a href="#" class="btn btn-primary" role="button">Registrate Ahora!</a> </p>
+                        <p><a href="{{ url('registro') }}" class="btn btn-primary" role="button">Registrate Ahora!</a> </p>
                       </div>
                   </div>
               </div>
@@ -57,7 +57,7 @@
                         <div class="caption" align="center">
                           <h3>INVITA</h3>
                           <p>Invita a todos tus amigos</p>
-                          <p><a href="#" class="btn btn-primary" role="button">Invita amig@s!</a> </p>
+                          <p><a href="{{ url('registro') }}" class="btn btn-primary" role="button">Invita amig@s!</a> </p>
                         </div>
                     </div>
               </div>
@@ -67,7 +67,7 @@
                         <div class="caption" align="center">
                           <h3>DISFRUTA</h3>
                           <p>El ultimo paso y buen provecho!</p>
-                          <p><a href="#" class="btn btn-primary" role="button">Comenzá a disfrutar!</a> </p>
+                          <p><a href="{{ url('registro') }}" class="btn btn-primary" role="button">Comenzá a disfrutar!</a> </p>
                         </div>
                     </div>
               </div>

@@ -5,7 +5,7 @@
 @section('content')
 <h1>Mis Eventos</h1>
 <ul class="nav navbar-right">  
-  <a href="#" class="btn btn-warning">Organizar evento +</a><br><br>
+  <a href="{{ url('organizaEvento') }}" class="btn btn-warning">Organizar evento +</a><br><br>
 </ul>
 <div class="container">
 	<table class="table table-striped table-hover ">

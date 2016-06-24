@@ -21,18 +21,18 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                           </button>
-                          <a class="navbar-brand" href="#">Eventos de Cris</a>
+                          <a class="navbar-brand" href= "{{ url('index') }}">Eventos de Cris</a>
                     </div>
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
                           <ul class="nav navbar-nav">
-                                <li class="active"><a href={{ url('index') }}>Inicio <span class="sr-only">(current)</span></a></li>
-                                <li><a href={{ url('que') }}>Que es Eventos de Cris</a></li>
-                                <li><a href={{ url('quienes') }}>Quienes Somos</a></li>
-                                <li><a href={{ url('contacto') }}>Contacto</a></li>
+                                <li class="active"><a href= "{{ url('index') }}">Inicio <span class="sr-only">(current)</span></a></li>
+                                <li><a href="{{ url('que') }}">Que es Eventos de Cris</a></li>
+                                <li><a href="{{ url('quienes') }}">Quienes Somos</a></li>
+                                <li><a href="{{ url('contacto') }}">Contacto</a></li>
                           </ul>
                           <ul class="nav navbar-nav navbar-right">
-                                <li><a href={{ url('login') }}>Inicio de sesion</a></li>
-                                <li><a href={{ url('registro') }}>Registrarse</a></li>
+                                <li><a href="{{ url('login') }}">Inicio de sesion</a></li>
+                                <li><a href="{{ url('registro') }}">Registrarse</a></li>
                           </ul>
                     </div>
               </div>

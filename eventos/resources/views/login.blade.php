@@ -4,33 +4,39 @@
 @endsection
 @section('content')
 <div class="container">
-	<form class="form-horizontal" method='post' action='/login' >
+	 {!!Form::open(['method' => 'POST', 'url' => 'login', 'role' => 'form'])!!}
 		  <fieldset>
 			    <legend>Iniciar sesión</legend>
+			    @if($errors->any())
+                Datos incorrectos
+                @endif
 			    <div class="form-group">
 			      <label for="inputEmail" class="col-lg-2 control-label">Email</label>
 			      <div class="col-md-10">
-			        <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+			         {!!Form::text('Email', '', array('class' => 'form-control'))!!}
+			         <span class="help-block">{{ $errors->first('Email') }}</span>
 			      </div>
 			    </div>
 			    <div class="form-group">
 			      <label for="inputPassword" class="col-lg-2 control-label">Contraseña</label>
 			      <div class="col-lg-10">
-			        <input type="password" class="form-control" id="inputPassword" placeholder="Contraseña">
+ 						{!!Form::password('password', array('class' => 'form-control'))!!}
+                  		<span class="help-block">{!! $errors->first('password') !!}</span>
 			      </div>
 			    </div>
 			    <div class="form-group">
 			      <div class="col-lg-10 col-lg-offset-2">
-			        <button type="submit" class="btn btn-primary">Entrar</button>
+			        <button type="submit" class="btn btn-primary" name="btnLogin">Entrar</button>
 			      </div>
 			    </div>
 			    <div class="form-group">
 			    	<div class="pull-right">
-						<a href="#" class="btn btn-default">Olvide la contraseña</a>
-	                    <a href="#" class="btn btn-primary">Registrarme</a>
+						<a href="#" class="btn btn-default" name="btnOlvidePass">Olvide la contraseña</a>
+	                    <a href="{{ url('registro') }}" class="btn btn-primary" name="btnRegistrarme">Registrarme</a>
                     </div>
 			    </div>
 		  </fieldset>
-	</form>
+		  {!!Form::close()!!}
+	
 </div>   
 @endsection

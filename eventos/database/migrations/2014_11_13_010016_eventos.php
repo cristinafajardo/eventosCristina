@@ -12,12 +12,10 @@ class Eventos extends Migration {
 	 */
 	public function up()
 	{
-		Schema::table('eventos',function($table) // creo los campos de la tabla eventos
+		Schema::table('eventos',function($table) 
 		{
 			$table->create();
-			
 			$table->increments('id');
-			
 			$table->string('nombre',30); 
 			$table->string('direccion',30);
 			$table->date('fecha'); 
@@ -31,7 +29,6 @@ class Eventos extends Migration {
 			$table->integer('adultosmax');
 			$table->integer('creador')->unsigned();
 			$table->foreign('creador')->references('id')->on('usuarios');
-			
 			$table->timestamps();
 		});
 	}

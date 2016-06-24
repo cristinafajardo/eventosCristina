@@ -12,12 +12,10 @@ class Invitados extends Migration {
 	 */
 	public function up()
 	{
-		Schema::table('invitados',function($table) // creo los campos de la tabla invitados
+		Schema::table('invitados',function($table) 
 		{
 			$table->create();
-			
 			$table->increments('id');
-			
 			$table->integer('idevento')->unsigned();
 			$table->foreign('idevento')->references('id')->on('eventos')->onDelete('cascade');
 			$table->integer('idusuario')->unsigned();
@@ -31,8 +29,6 @@ class Invitados extends Migration {
 			$table->double('costo');
 			$table->double('gasto');
 			$table->double('balance');
-			
-			
 			$table->timestamps();
 		});
 	}
