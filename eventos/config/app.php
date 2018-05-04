@@ -151,6 +151,14 @@ return [
         Collective\Html\HtmlServiceProvider::class,
         Cviebrock\EloquentSluggable\SluggableServiceProvider::class,
 
+         /*
+         * google maps Provider...
+         */
+        GeneaLabs\Phpgmaps\PhpgmapsServiceProvider::class,
+         /*
+         * mensajes flash...
+         */
+        Laracasts\Flash\FlashServiceProvider::class,
     ],
 
     /*
@@ -205,6 +213,11 @@ return [
         */
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
+         /* 
+        * google maps
+        */
+        'Gmaps' => GeneaLabs\Phpgmaps\Facades\PhpgmapsFacade::class,
+        'Flash' => Laracasts\Flash\FlashServiceProvider::class,
 
     ],
 

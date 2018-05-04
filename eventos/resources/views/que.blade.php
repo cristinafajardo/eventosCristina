@@ -4,24 +4,41 @@
 @endsection
 @section('content')
 <div class="container">
+    <legend> Qué es Eventos</legend>
   <div class="row">
-        <div class="col-sm-6 col-md-4">
+    <h4>Esta aplicación web surge de un proyecto inicial conjunto, realizado con Javier Morabes y Ezequiel Torres, denominado "Meating".
+</h4> <br>
+        <div class="col-sm-8 col-md-6">
             <div class="thumbnail">
-                <img src="{{ asset('img/cafe.jpg') }}" alt="...">
+                <img src="{{ asset('img/misEventos.png') }}" alt="...">
             </div>
         </div>
         <div class="col-sm-6 col-md-4">
-           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis egestas tortor et interdum. Nunc condimentum urna gravida, tincidunt augue ut, facilisis sapien. Maecenas posuere, felis vel ornare ultrices, metus nisi rutrum arcu, ac lacinia urna dui eget sem. Nulla orci lectus, laoreet at diam a, tempor blandit est. Aenean lobortis in lectus venenatis consequat. Mauris euismod ut turpis nec commodo. Phasellus mattis id odio eu euismod. Sed orci sem, aliquet cursus sem sed, convallis congue quam. In in leo aliquam, consequat urna sit amet, interdum arcu. Maecenas fermentum fermentum tellus id vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis ullamcorper felis a congue. Nulla pretium auctor ex in aliquam. Aenean efficitur mauris ac felis molestie, bibendum varius felis laoreet. Phasellus fringilla mauris non lacus viverra, at commodo magna ullamcorper.</p>
+           
+           <h4>Permite organizar eventos de manera rápida y sencilla, con sólo algunos clicks.</h4>
         </div>
     </div>
     <div class="row">
         <div class="col-sm-6 col-md-4">
-           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis egestas tortor et interdum. Nunc condimentum urna gravida, tincidunt augue ut, facilisis sapien. Maecenas posuere, felis vel ornare ultrices, metus nisi rutrum arcu, ac lacinia urna dui eget sem. Nulla orci lectus, laoreet at diam a, tempor blandit est. Aenean lobortis in lectus venenatis consequat. Mauris euismod ut turpis nec commodo. Phasellus mattis id odio eu euismod. Sed orci sem, aliquet cursus sem sed, convallis congue quam. In in leo aliquam, consequat urna sit amet, interdum arcu. Maecenas fermentum fermentum tellus id vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis ullamcorper felis a congue. Nulla pretium auctor ex in aliquam. Aenean efficitur mauris ac felis molestie, bibendum varius felis laoreet. Phasellus fringilla mauris non lacus viverra, at commodo magna ullamcorper.</p>
+           <h4>Podrás invitar a tus amigos, enviarles un mapa con la dirección para que no se pierdan, 
+            asignarle a cada uno lo que debe traer o comunicarles cuánto dinero debe aportar.</h4>
+            
+        </div>
+        <div class="col-sm-8 col-md-6">
+            <div class="thumbnail">
+                <img src="{{ asset('img/mapa.png') }}" alt="...">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-8 col-md-6">
+            <div class="thumbnail">
+                <img src="{{ asset('img/listas.png') }}" alt="...">
+            </div>
         </div>
         <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-                <img src="{{ asset('img/cafe.jpg') }}" alt="...">
-            </div>
+             <h4>Para poder utilizar estos servicios, sólo tenés que registrarte y listo! Ya podes comenzar a 
+                organizar todo e invitar a quien quieras, sólo con su dirección de e-mail.</h4>
         </div>
     </div>
 </div>

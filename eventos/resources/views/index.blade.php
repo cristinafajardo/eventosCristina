@@ -10,21 +10,33 @@
                 <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                 <li data-target="#carousel-example-generic" data-slide-to="1"></li>
                 <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="4"></li>
             </ol>
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                    <img src="{{ asset('img/muffins.jpg') }}" alt="...">
+                    <img src="{{ asset('img/hamburguesa.jpg') }}" alt="...">
                     <div class="carousel-caption">
                     </div>
                 </div>
                 <div class="item">
-                    <img src="{{ asset('img/carne.jpg') }}" alt="...">
+                    <img src="{{ asset('img/carne1.jpg') }}" alt="...">
                     <div class="carousel-caption">
                     </div>
                 </div>
                 <div class="item">
-                    <img src="{{ asset('img/pastel.jpg') }}" alt="...">
+                    <img src="{{ asset('img/pizza.jpeg') }}" alt="...">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="{{ asset('img/bebidas.jpg') }}" alt="...">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="{{ asset('img/tacos.jpg') }}" alt="...">
                     <div class="carousel-caption">
                     </div>
                 </div>
@@ -43,31 +55,44 @@
       <div class="row">
               <div class="col-sm-6 col-md-4">
                   <div class="thumbnail">
-                      <img src="{{ asset('img/cafe.jpg') }}" alt="...">
+                      <img src="{{ asset('img/contactos.jpg') }}" alt="...">
                       <div class="caption" align="center">
-                        <h3>ORGANIZÁ RAPIDO Y FACIL!</h3>
-                        <p>sólo con un par de clicks</p>
-                        <p><a href="{{ url('registro') }}" class="btn btn-primary" role="button">Registrate Ahora!</a> </p>
+                          <h3>ORGANIZÁ RÁPIDO Y FÁCIL!</h3>
+                          <p>Sólo con un par de clicks!!</p>
+                           @if(!Session::has('usuario_id'))
+                              <p><a href="{{ url('registro') }}" class="btn btn-primary" role="button">Registrate Ahora!</a> </p>
+                           @else
+                             <p><a href="{{ url('misEventos') }}" class="btn btn-primary" role="button">Organizar evento!</a> </p>
+                          @endif
+                         
                       </div>
                   </div>
               </div>
               <div class="col-sm-6 col-md-4">
                     <div class="thumbnail">
-                        <img src="{{ asset('img/te.jpg') }}" alt="...">
+                        <img src="{{ asset('img/fiesta.jpg') }}" alt="...">
                         <div class="caption" align="center">
-                          <h3>INVITA</h3>
-                          <p>Invita a todos tus amigos</p>
-                          <p><a href="{{ url('registro') }}" class="btn btn-primary" role="button">Invita amig@s!</a> </p>
+                            <h3>INVITÁ</h3>
+                            <p>Invitá a todos tus amigos</p>
+                            @if(!Session::has('usuario_id'))
+                              <p><a href="{{ url('registro') }}" class="btn btn-primary" role="button">Invita Amig@s!</a> </p>
+                           @else
+                             <p><a href="{{ url('misEventos') }}" class="btn btn-primary" role="button">Organizar evento!</a> </p>
+                          @endif
                         </div>
                     </div>
               </div>
               <div class="col-sm-6 col-md-4">
                     <div class="thumbnail">
-                        <img src="{{ asset('img/torta.jpg') }}"alt="...">
+                        <img src="{{ asset('img/brindis.jpg') }}"alt="...">
                         <div class="caption" align="center">
-                          <h3>DISFRUTA</h3>
-                          <p>El ultimo paso y buen provecho!</p>
-                          <p><a href="{{ url('registro') }}" class="btn btn-primary" role="button">Comenzá a disfrutar!</a> </p>
+                            <h3>DISFRUTÁ</h3>
+                            <p>El último paso y buen provecho!</p>
+                           @if(!Session::has('usuario_id'))
+                              <p><a href="{{ url('registro') }}" class="btn btn-primary" role="button">Comenzá a disfrutar!</a> </p>
+                           @else
+                             <p><a href="{{ url('misEventos') }}" class="btn btn-primary" role="button">Organizar evento!</a> </p>
+                          @endif
                         </div>
                     </div>
               </div>
